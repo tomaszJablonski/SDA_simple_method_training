@@ -2,9 +2,11 @@ package com.company;
 
 public class Main {
 
-    static void printName(String firstName, String lastName ){
+    static String printName(String firstName, String lastName ){
         System.out.println("My first name is: " + firstName);
         System.out.println("My last name is : " + lastName);
+
+        return firstName+" "+lastName;
     }
 
     static int plus(int arg1,int arg2){
@@ -17,14 +19,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //void firstAndLastname = printName("Tomasz","Jabłoński");
+        String printName = printName("Tomasz","Jabłoński");
+        System.out.println(printName);
 
         int plus = plus(10,5);
         System.out.println(plus);
 
         int multipleValue = multiple(23, 2, 5); // 230
         System.out.println(multipleValue);
-
-
+        
     }
 }
